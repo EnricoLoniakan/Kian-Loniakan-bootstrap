@@ -1,0 +1,49 @@
+
+
+
+.navbar .container {
+
+background-color: darkslategray;
+margin-right: 1000px;
+padding: 10px;
+
+}
+
+
+.header {
+
+text-align: center;
+font-size: xx-large;
+background-color: darkslategray;
+
+}
+
+ .btn-primary {
+
+    color: whitesmoke;
+    background-color: gold;
+    border-color: darkgoldenrod;
+ }
+
+ .btn:hover {
+
+    color: white;
+    background-color: goldenrod;
+
+ }
+
+ .card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: black;
+    background-clip: border-box;
+    border: 1px solid gold;
+    border-radius: 0.25rem;
+    
+
+ }
