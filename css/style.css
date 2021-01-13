@@ -1,49 +1,127 @@
 
-
-
-.navbar .container {
-
-background-color: darkslategray;
-margin-right: 1000px;
-padding: 10px;
-
+*{
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
 }
 
 
-.header {
-
-text-align: center;
-font-size: xx-large;
-background-color: darkslategray;
-
-}
-
- .btn-primary {
-
-    color: whitesmoke;
-    background-color: gold;
-    border-color: darkgoldenrod;
+.blox{
+   height: 100%;
+   width: 300px;
+   position: relative;
  }
-
- .btn:hover {
-
-    color: white;
-    background-color: goldenrod;
-
+ .blox .menu-btn{      /* själva knappen på sidenavbaren ;) */
+   position: absolute;
+   left: 20px;
+   top: 10px;
+   background: #11421c;
+   color: #fff;            
+   height: 45px;
+   width: 45px;
+   z-index: 9999;
+   border: 1px solid #333;
+   border-radius: 5px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.3s ease;
  }
+ #btn:checked ~ .menu-btn{
+   left: 247px;
+ }
+ .blox .menu-btn i{
+   position: absolute;
+   transform: none ;
+   font-size: 23px;
+   transition: all 0.3s ease;
+ }
+ .blox .menu-btn i.stäng{  /* opacity 0 på stäng så att den inte syns */
+   opacity: 0;
+ }
+ #btn:checked ~ .menu-btn i.stäng{ /* stäng animation på sidenavbaren */
+   opacity: 1;
+   transform: rotate(-180deg);
+ }
+ #btn:checked ~ .menu-btn i.öppna{ /* öppna animation på sidenavbaren */
+   opacity: 0;
+   transform: rotate(180deg);
+ }
+ #sidebar{
+   position: fixed;
+   background: #404040;
+   height: 100%;
+   width: 270px;
+   overflow: hidden;
+   left: -270px;
+   transition: all 0.3s ease;
+ }
+ #btn:checked ~ #sidebar{
+   left: 0;
+ }
+ #sidebar .title{     /* Titeln vid sidebaren(box - container) där jag skrev snabb klick XD */
+   line-height: 65px;
+   text-align: center;
+   background: #2c5f39;       
+   font-weight: 600;
+   color: #f2f2f2;
+   border-bottom: 1px solid #222;
+ }
+ #sidebar .list-items{      /* navbaren och backgrunden på hela tabben */
+   position: relative;
+   background: #3a6b46;
+   width: 100%;
+   height: 100%;
+   list-style: none;
+ }
+ #sidebar .list-items li{    /* sidebar .list-items li är själva configen (padding,färg,storlek osv) på itemsen i sidebaren (box - container). */
+   padding-left: 40px;
+   line-height: 20px;
+   border-top: 1px solid rgba(255,255,255,0.1);   
+   border-bottom: 1px solid #333;
+   transition: all 0.3s ease;
+ }
+ #sidebar .list-items li:hover{       /* animation när man hovrar på itemsen */
+   border-top: 1px solid transparent;
+   border-bottom: 1px solid transparent; 
+   box-shadow: 0 0px 10px 3px #222;
+ }
+ #sidebar .list-items li:first-child{
+   border-top: none;
+ }
+ #sidebar .list-items li a{    /* länkarna */
+   color: #f2f2f2;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: 500;
+   height: 100%;
+   width: 100%;
+   display: block;
+ }
+ 
+ #sidebar .list-items .icons a:hover{
+   background: #404040;
+ }
+ .list-items .icons a:first-child{
+   margin-left: 0px;
+ }
+ .content{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: #202020;
+   z-index: -1;
+   width: 100%;
+   text-align: center;
+ }
+ .content .header{
 
- .card {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: black;
-    background-clip: border-box;
-    border: 1px solid gold;
-    border-radius: 0.25rem;
-    
-
+   font-size: 30px;
+   font-weight: 700;
+   margin-top: 35px;
+   background-color: rgb(29, 95, 40);
+   padding-top: 40px;
  }
