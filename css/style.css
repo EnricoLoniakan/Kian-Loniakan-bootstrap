@@ -13,7 +13,7 @@
    position: relative;
  }
  .blox .menu-btn{      /* själva knappen på sidenavbaren ;) */
-   position: absolute;
+   position: fixed;
    left: 20px;
    top: 10px;
    background: #11421c;
@@ -33,7 +33,7 @@
    left: 247px;
  }
  .blox .menu-btn i{
-   position: absolute;
+   position: fixed;
    transform: none ;
    font-size: 23px;
    transition: all 0.3s ease;
@@ -101,6 +101,7 @@
    display: block;
  }
  
+ 
  #sidebar .list-items .icons a:hover{
    background: #404040;
  }
@@ -119,9 +120,117 @@
  }
  .content .header{
 
+  display: flex;
    font-size: 30px;
    font-weight: 700;
    margin-top: 35px;
    background-color: rgb(29, 95, 40);
    padding-top: 40px;
+   justify-content: center;
+   box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+-webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+-moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+  
  }
+
+ .container{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  margin-top: 5px;
+  text-align: center;
+  background-attachment: fixed;
+  height: 800px;
+
+ }
+
+ .container1{
+  text-align: center;
+  background-attachment: fixed;
+  background-color: rgb(83, 83, 83);
+  height: 800px;
+  
+}
+
+.container2{
+  text-align: center;
+  background-color: rgb(24, 236, 208);
+  height: 800px;
+}
+
+.container3{
+  text-align: center;
+  background-color: rgb(68, 211, 63);
+  height: 800px;
+}
+
+.container4{
+  text-align: center;
+  background-color: red;
+  height: 800px;
+}
+
+.container5{
+  text-align: center;
+  background-color: rgb(245, 230, 16);
+  height: 800px;
+}
+
+.container6{
+  text-align: center;
+  background-color: brown;
+  height: 800px;
+}
+
+.container7{
+  text-align: center;
+  background-color: lightgreen;
+  height: 800px;
+}
+
+.container8{
+  text-align: center;
+  background-color: rgb(111, 21, 214);
+  height: 800px;
+}
+
+.container9{
+  text-align: center;
+  background-color: yellow;
+  height: 800px;
+}
+
+.container10{
+  text-align: center;
+  background-color: violet;
+  height: 800px;
+}
+
+.container11{
+  text-align: center;
+  background-color: rgb(159, 245, 22);
+  height: 800px;
+}
+
+.container12{
+  text-align: center;
+  background-color: purple;
+  height: 800px;
+}
+
+.container13{
+  text-align: center;
+  background-color: rgb(128, 0, 49);
+  height: 800px;
+}
+
+.container14{
+  text-align: center;
+  background-color: rgb(29, 38, 168);
+  height: 800px;
+}
