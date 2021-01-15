@@ -6,6 +6,11 @@
    text-decoration: none;
 }
 
+body {
+
+  background-color: rgb(0, 0, 0);
+}
+
 
 .blox{
    height: 100%;
@@ -21,13 +26,17 @@
    height: 45px;
    width: 45px;
    z-index: 9999;
-   border: 1px solid #333;
+   border: 3px solid rgb(16, 102, 23);
    border-radius: 5px;
    cursor: pointer;
    display: flex;
    align-items: center;
    justify-content: center;
    transition: all 0.3s ease;
+   box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+   -webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+   -moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+   
  }
  #btn:checked ~ .menu-btn{
    left: 247px;
@@ -130,6 +139,7 @@
    box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
 -webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
 -moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+transition: all 0.3s ease;
   
  }
 
@@ -145,14 +155,16 @@
   margin-top: 5px;
   text-align: center;
   background-attachment: fixed;
-  height: 800px;
-
+  height: 300px;
+  color: rgb(255, 255, 255);
+  transition: all 5s ease;
  }
 
  .container1{
   text-align: center;
   background-attachment: fixed;
-  background-color: rgb(83, 83, 83);
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F05%2FBlack-and-White-Wallpapers-HQ.png&f=1&nofb=1');
+ color: white;
   height: 800px;
   
 }
@@ -234,3 +246,30 @@
   background-color: rgb(29, 38, 168);
   height: 800px;
 }
+
+.container15{
+  text-align: center;
+  background-color: rgb(245, 230, 16);
+  height: 800px;
+}
+
+.navbar-toggler{
+  display: flex;
+  padding: 0.25rem 11rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: rgb(29, 95, 40);
+  box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+-webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+-moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+  border: 1px solid rgb(39, 117, 39);
+  border-radius: 0.5rem;
+  color: white;
+  border-width: 2px;
+}
+
+a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
