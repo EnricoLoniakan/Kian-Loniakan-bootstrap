@@ -1,275 +1,259 @@
 
 
 body {
-
-  background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
 }
-
-
 .blox{
-   height: 100%;
-   width: 300px;
-   position: relative;
- }
- .blox .menu-btn{      /* själva knappen på sidenavbaren ;) */
-   position: fixed;
-   left: 20px;
-   top: 10px;
-   background: #11421c;
-   color: #fff;            
-   height: 45px;
-   width: 45px;
-   z-index: 9999;
-   border: 3px solid rgb(16, 102, 23);
-   border-radius: 5px;
-   cursor: pointer;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   transition: all 0.3s ease;
-   box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
-   -webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
-   -moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
-   
- }
- #btn:checked ~ .menu-btn{
-   left: 247px;
- }
- .blox .menu-btn i{
-   position: fixed;
-   transform: none ;
-   font-size: 23px;
-   transition: all 0.3s ease;
- }
- .blox .menu-btn i.stäng{  /* opacity 0 på stäng så att den inte syns */
-   opacity: 0;
- }
- #btn:checked ~ .menu-btn i.stäng{ /* stäng animation på sidenavbaren */
-   opacity: 1;
-   transform: rotate(-180deg);
- }
- #btn:checked ~ .menu-btn i.öppna{ /* öppna animation på sidenavbaren */
-   opacity: 0;
-   transform: rotate(180deg);
- }
- #sidebar{
-   position: fixed;
-   background: #404040;
-   height: 100%;
-   width: 270px;
-   overflow: hidden;
-   left: -270px;
-   transition: all 0.3s ease;
- }
- #btn:checked ~ #sidebar{
-   left: 0;
- }
- #sidebar .title{     /* Titeln vid sidebaren(box - container) där jag skrev snabb klick XD */
-   line-height: 65px;
-   text-align: center;
-   background: #2c5f39;       
-   font-weight: 600;
-   color: #f2f2f2;
-   border-bottom: 1px solid #222;
- }
- #sidebar .list-items{      /* navbaren och backgrunden på hela tabben */
-   position: relative;
-   background: #3a6b46;
-   width: 100%;
-   height: 100%;
-   list-style: none;
- }
- #sidebar .list-items li{    /* sidebar .list-items li är själva configen (padding,färg,storlek osv) på itemsen i sidebaren (box - container). */
-   padding-left: 40px;
-   line-height: 20px;
-   border-top: 1px solid rgba(255,255,255,0.1);   
-   border-bottom: 1px solid #333;
-   transition: all 0.3s ease;
- }
- #sidebar .list-items li:hover{       /* animation när man hovrar på itemsen */
-   border-top: 1px solid transparent;
-   border-bottom: 1px solid transparent; 
-   box-shadow: 0 0px 10px 3px #222;
- }
- #sidebar .list-items li:first-child{
-   border-top: none;
- }
- #sidebar .list-items li a{    /* länkarna */
-   color: #f2f2f2;
-   text-decoration: none;
-   font-size: 18px;
-   font-weight: 500;
-   height: 100%;
-   width: 100%;
-   display: block;
- }
- 
- 
- #sidebar .list-items .icons a:hover{
-   background: #404040;             /* pop ut effecterna av knapparna */
- }
- .list-items .icons a:first-child{
-   margin-left: 0px;
- }
- .content{
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   color: #202020;
-   z-index: -1;
-   width: 100%;
-   text-align: center;
- }
- .content .header{
-
-  display: flex;
-   font-size: 30px;
-   font-weight: 700;
-   margin-top: 35px;
-   background-color: rgb(29, 95, 40);
-   padding-top: 40px;
-   justify-content: center;
-   box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
--webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
--moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
-transition: all 0.3s ease;
-  
- }
-
- .container{
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: center;
-  margin-top: 5px;
-  text-align: center;
-  background-attachment: fixed;
-  height: 300px;
-  color: rgb(255, 255, 255);
-  transition: all 5s ease;
-  font-size: 30px;
- }
-
- 
-
- .container1{
-  display: flexbox;
-  font-size: 10px;
-  text-align: center;
-  background-attachment: fixed;
-  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F05%2FBlack-and-White-Wallpapers-HQ.png&f=1&nofb=1');
- color: white;
-  height: 500px;
-  
+	height: 100%;
+	width: 300px;
+	position: relative;
 }
-
+.blox .menu-btn{
+	/* själva knappen på sidenavbaren ;
+	) */
+	position: fixed;
+	left: 20px;
+	top: 10px;
+	background: #11421c;
+	color: #fff;
+	height: 45px;
+	width: 45px;
+	z-index: 9999;
+	border: 3px solid rgb(16, 102, 23);
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease;
+	box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	-moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+}
+#btn:checked ~ .menu-btn{
+	left: 247px;
+}
+.blox .menu-btn i{
+	position: fixed;
+	transform: none ;
+	font-size: 23px;
+	transition: all 0.3s ease;
+}
+.blox .menu-btn i.stäng{
+	/* opacity 0 på stäng så att den inte syns */
+	opacity: 0;
+}
+#btn:checked ~ .menu-btn i.stäng{
+	/* stäng animation på sidenavbaren */
+	opacity: 1;
+	transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn i.öppna{
+	/* öppna animation på sidenavbaren */
+	opacity: 0;
+	transform: rotate(180deg);
+}
+#sidebar{
+	position: fixed;
+	background: #404040;
+	height: 100%;
+	width: 270px;
+	overflow: hidden;
+	left: -270px;
+	transition: all 0.3s ease;
+}
+#btn:checked ~ #sidebar{
+	left: 0;
+}
+#sidebar .title{
+	/* Titeln vid sidebaren(box - container) där jag skrev snabb klick XD */
+	line-height: 65px;
+	text-align: center;
+	background: #2c5f39;
+	font-weight: 600;
+	color: #f2f2f2;
+	border-bottom: 1px solid #222;
+}
+#sidebar .list-items{
+	/* navbaren och backgrunden på hela tabben */
+	position: relative;
+	background: #3a6b46;
+	width: 100%;
+	height: 100%;
+	list-style: none;
+}
+#sidebar .list-items li{
+	/* sidebar .list-items li är själva configen (padding,färg,storlek osv) på itemsen i sidebaren (box - container). */
+	padding-left: 40px;
+	line-height: 20px;
+	border-top: 1px solid rgba(255,255,255,0.1);
+	border-bottom: 1px solid #333;
+	transition: all 0.3s ease;
+}
+#sidebar .list-items li:hover{
+	/* animation när man hovrar på itemsen */
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+	box-shadow: 0 0px 10px 3px #222;
+}
+#sidebar .list-items li:first-child{
+	border-top: none;
+}
+#sidebar .list-items li a{
+	/* länkarna */
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+#sidebar .list-items .icons a:hover{
+	background: #404040;
+	/* pop ut effecterna av knapparna */
+}
+.list-items .icons a:first-child{
+	margin-left: 0px;
+}
+.content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #202020;
+	z-index: -1;
+	width: 100%;
+	text-align: center;
+}
+.content .header{
+	display: flex;
+	font-size: 30px;
+	font-weight: 700;
+	margin-top: 35px;
+	background-color: rgb(29, 95, 40);
+	padding-top: 40px;
+	justify-content: center;
+	box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	-moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	transition: all 0.3s ease;
+}
+.container{
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: justify;
+	justify-content: center;
+	margin-top: 5px;
+	text-align: center;
+	background-attachment: fixed;
+	height: 300px;
+	color: rgb(255, 255, 255);
+	transition: all 5s ease;
+	font-size: 30px;
+}
+.container1{
+	display: flexbox;
+	font-size: 10px;
+	text-align: center;
+	background-attachment: fixed;
+	background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F05%2FBlack-and-White-Wallpapers-HQ.png&f=1&nofb=1');
+	color: white;
+	height: 500px;
+}
 .container2{
-  text-align: center;
-  background-color: rgb(24, 236, 208);
-  height: 500px;                                /* varje container är en text som har bakgrund och höjd som får till den att se snygg ut. */
-  display: flexbox;
+	text-align: center;
+	background-color: rgb(24, 236, 208);
+	height: 500px;
+	/* varje container är en text som har bakgrund och höjd som får till den att se snygg ut. */
+	display: flexbox;
 }
-
 .container3{
-  text-align: center;
-  background-color: rgb(68, 211, 63);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(68, 211, 63);
+	height: 500px;
 }
-
 .container4{
-  text-align: center;
-  background-color: red;
-  height: 500px;
+	text-align: center;
+	background-color: red;
+	height: 500px;
 }
-
 .container5{
-  text-align: center;
-  background-color: rgb(245, 230, 16);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(245, 230, 16);
+	height: 500px;
 }
-
 .container6{
-  text-align: center;
-  background-color: brown;
-  height: 500px;
+	text-align: center;
+	background-color: brown;
+	height: 500px;
 }
-
 .container7{
-  text-align: center;
-  background-color: lightgreen;
-  height: 500px;
+	text-align: center;
+	background-color: lightgreen;
+	height: 500px;
 }
-
 .container8{
-  text-align: center;
-  background-color: rgb(111, 21, 214);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(111, 21, 214);
+	height: 500px;
 }
-
 .container9{
-  text-align: center;
-  background-color: yellow;
-  height: 500px;
+	text-align: center;
+	background-color: yellow;
+	height: 500px;
 }
-
 .container10{
-  text-align: center;
-  background-color: violet;
-  height: 500px;
+	text-align: center;
+	background-color: violet;
+	height: 500px;
 }
-
 .container11{
-  text-align: center;
-  background-color: rgb(159, 245, 22);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(159, 245, 22);
+	height: 500px;
 }
-
 .container12{
-  text-align: center;
-  background-color: purple;
-  height: 500px;
+	text-align: center;
+	background-color: purple;
+	height: 500px;
 }
-
 .container13{
-  text-align: center;
-  background-color: rgb(128, 0, 49);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(128, 0, 49);
+	height: 500px;
 }
-
 .container14{
-  text-align: center;
-  background-color: rgb(29, 38, 168);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(29, 38, 168);
+	height: 500px;
 }
-
 .container15{
-  text-align: center;
-  background-color: rgb(245, 230, 16);
-  height: 500px;
+	text-align: center;
+	background-color: rgb(245, 230, 16);
+	height: 500px;
 }
-
 .navbar-toggler{
-  display: flex;
-  padding: 0.15rem 1rem;
-  font-size: 1rem;
-  line-height: 1;                                    /* längst ner på sidan finns det knappar som leder till andra sidor, han dock inte fixa till de andra sidorna :( */
-  background-color: rgb(29, 95, 40);
-  box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
--webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
--moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
-  border: 1px solid rgb(39, 117, 39);
-  border-radius: 0.5rem;
-  color: white;
-  border-width: 2px;
+	display: flex;
+	padding: 0.15rem 1rem;
+	font-size: 1rem;
+	line-height: 1;
+	/* längst ner på sidan finns det knappar som leder till andra sidor, han dock inte fixa till de andra sidorna :( */
+	background-color: rgb(29, 95, 40);
+	box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	-webkit-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	-moz-box-shadow: 0px 6px 0px 0px rgba(29,84,38,1);
+	border: 1px solid rgb(39, 117, 39);
+	border-radius: 0.5rem;
+	color: white;
+	border-width: 2px;
 }
-
 a:hover {
-  color: green;                        /* ville fixa till så att länk knapparna hade annat färg, så använde mig av bootstraps a:hover */
-  text-decoration: underline;
+	color: green;
+	/* ville fixa till så att länk knapparna hade annat färg, så använde mig av bootstraps a:hover */
+	text-decoration: underline;
 }
-
